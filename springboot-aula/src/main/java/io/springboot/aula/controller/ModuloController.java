@@ -1,6 +1,7 @@
 package io.springboot.aula.controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,6 +22,11 @@ public class ModuloController {
 	@RequestMapping(value = "/modulo", method = RequestMethod.GET )
 	public List<Modulo> listaModulos() {
 		return repository.findAll();
+	}
+	
+	@RequestMapping(value = "/modulo/obtem/{id}", method = RequestMethod.GET )
+	public Optional<Modulo> obterModulo(@PathVariable String id) {
+		return repository.findById(id);
 	}
 	
 	@RequestMapping(value = "/modulo", method = RequestMethod.POST )

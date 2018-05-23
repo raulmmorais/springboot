@@ -1,6 +1,7 @@
 package io.springboot.aula.controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,6 +22,11 @@ public class AlunoController {
 	@RequestMapping(value = "/aluno", method = RequestMethod.GET )
 	public List<Aluno> listaAlunos() {
 		return repository.findAll();
+	}
+	
+	@RequestMapping(value = "/aluno/obtem/{id}", method = RequestMethod.GET )
+	public Optional<Aluno> obterAluno(@PathVariable String id) {
+		return repository.findById(id);
 	}
 	
 	@RequestMapping(value = "/aluno", method = RequestMethod.POST )

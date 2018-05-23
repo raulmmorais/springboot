@@ -42,21 +42,31 @@
 		<div id="form_incluir" style="display: none">
 			<form id="formCadastrar">
 				<div class="form-group row">
-					<label for="nome" class="col-sm-1 col-form-label">Nome</label>
+					<label for="presenca" class="col-sm-1 col-form-label">Presença</label>
 					<div class="col-sm-11">
-						<input type='text' class="form-control" name='nome' id='nome' />
+						<input type="checkbox" class="form-control" name='presenca' id='presenca' />
 					</div>
 				</div>
 				<div class="form-group row">
-					<label for="sobrenome" class="col-sm-1 col-form-label">Sobrenome</label>
+					<label for="data" class="col-sm-1 col-form-label">data</label>
 					<div class="col-sm-11">
-						<input type='text' class="form-control" name='sobrenome' id='sobrenome' />
+						<input type='text' class="datepicker form-control" name='data' id='data' />
 					</div>
 				</div>
 				<div class="form-group row">
-					<label for="idade" class="col-sm-1 col-form-label">Idade</label>
+					<label for="aluno" class="col-sm-1 col-form-label">Aluno</label>
 					<div class="col-sm-11">
-						<input type='text' class="form-control" name='idade' id='idade' />
+						<select name="aluno" id="aluno">
+							<option value="">Aluno</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="modulo" class="col-sm-1 col-form-label">Modulo</label>
+					<div class="col-sm-11">
+						<select name="modulo" id="modulo">
+							<option>modulo</option>
+						</select>
 					</div>
 				</div>
 					<button id='salvar' type='button' class="btn btn-primary">Salvar</button>
