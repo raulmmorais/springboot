@@ -9,7 +9,6 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
-
     <title>Diário</title>
   </head>
   <body>
@@ -46,18 +45,6 @@
 						<input type='text' class="form-control" name='nome' id='nome' />
 					</div>
 				</div>
-				<div class="form-group row">
-					<label for="sobrenome" class="col-sm-1 col-form-label">Sobrenome</label>
-					<div class="col-sm-11">
-						<input type='text' class="form-control" name='sobrenome' id='sobrenome' />
-					</div>
-				</div>
-				<div class="form-group row">
-					<label for="idade" class="col-sm-1 col-form-label">Idade</label>
-					<div class="col-sm-11">
-						<input type='text' class="form-control" name='idade' id='idade' />
-					</div>
-				</div>
 					<button id='salvar' type='button' class="btn btn-primary">Salvar</button>
 					<button id='cancelar' type='button' class="btn btn-secondary">Cancelar</button>
 			</form>
@@ -69,6 +56,7 @@
 	<script type="text/javascript" src="resources/js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="resources/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="resources/js/service.js"></script>
 	<script type="text/javascript" src="resources/js/modulo.js"></script>
   </body>
 </html>

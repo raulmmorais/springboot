@@ -65,6 +65,7 @@
 	<script type="text/javascript" src="resources/js/bootstrap.bundle.min.js"></script>
 	<script type="text/javascript" src="resources/js/bootstrap-datepicker.min.js"></script>
 	<script type="text/javascript" src="resources/js/bootstrap-datepicker.pt-BR.min.js"></script>
+	<script type="text/javascript" src="resources/js/service.js"></script>
 	<script type="text/javascript" src="resources/js/aluno.js"></script>
   </body>
 </html>

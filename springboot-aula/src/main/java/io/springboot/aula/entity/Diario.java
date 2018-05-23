@@ -13,6 +13,7 @@ public class Diario extends EntidadeGenerica {
 	
 	@DBRef
 	private Modulo modulo;
+	
 	private boolean presenca;
 	
 	public Date getData() {
